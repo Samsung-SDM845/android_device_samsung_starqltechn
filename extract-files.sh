@@ -86,7 +86,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
             sed -i 's/ril\.dds\.call\.slotid/vendor.calls.slotid/g' "${2}"
             ;;
-        vendor/lib64/hw/gatekeeper.mdfpp.so)
+        vendor/lib64/hw/gatekeeper.mdfpp.so|vendor/lib64/libkeymaster2_mdfpp.so|vendor/lib64/libkeymaster_helper_vendor.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed libcrypto.so libcrypto-v29.so "${2}"
             ;;
