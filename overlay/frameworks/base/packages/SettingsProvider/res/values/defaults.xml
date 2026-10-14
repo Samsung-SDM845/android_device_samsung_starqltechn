@@ -19,6 +19,6 @@
 <resources>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
 
-    <string name="def_device_name_simple">Samsung Galaxy S9</string>
+    <string name="def_device_name_simple">Samsung Galaxy Note 9</string>
 
 </resources>

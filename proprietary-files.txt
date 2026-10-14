@@ -1,4 +1,4 @@
-# All blobs from starqltezh-user 10 QP1A.190711.020 G9600ZHU9FVF2 release-keys, unless pinned
+# All blobs from crownqltezh-user 10 QP1A.190711.020 N9600ZHU9FVH2 release-keys, unless pinned
 
 # ADSP
 vendor/bin/adsprpcd
@@ -224,6 +224,7 @@ lib/libchromaflash.so
 lib64/libseemore.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib/android.hardware.camera.provider@2.5-legacy.so
+vendor/lib/camera/arcsoft_calibration.bin
 vendor/lib/camera/com.qti.sensor.imx318.so
 vendor/lib/camera/com.qti.sensor.imx320.so
 vendor/lib/camera/com.qti.sensor.imx345.so
@@ -232,6 +233,7 @@ vendor/lib/camera/com.qti.sensor.s5k5f1sx.so
 vendor/lib/camera/com.qti.sensormodule.0_imx345.bin
 vendor/lib/camera/com.qti.sensormodule.1_imx320.bin
 vendor/lib/camera/com.qti.sensormodule.2_s5k5f1sx.bin
+vendor/lib/camera/com.qti.sensormodule.3_s5k3m3.bin
 vendor/lib/camera/com.qti.sensormodule.4_imx320_full.bin
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
@@ -248,6 +250,10 @@ vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.samsung.node.bayerfuse.so
+vendor/lib/camera/components/com.samsung.node.capture_bokeh.so
+vendor/lib/camera/components/com.samsung.node.capture_fusion.so
+vendor/lib/camera/components/com.samsung.node.realtimebokeh.so
+vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
@@ -263,6 +269,7 @@ vendor/lib/camera/imx320tuned.bin
 vendor/lib/camera/imx345tuned.bin
 vendor/lib/camera/ois_fw_dom.bin
 vendor/lib/camera/ois_fw_sec.bin
+vendor/lib/camera/s5k3m3tuned.bin
 vendor/lib/camera/s5k5f1sxtuned.bin
 vendor/lib/camera/systemdefault.bin
 vendor/lib/camera/titan17x_usecases.bin
@@ -275,7 +282,9 @@ vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libdualcam_optical_zoom.so
 vendor/lib/libdualcam_optical_zoom_control.so
+vendor/lib/libdualcam_refocus.so
 vendor/lib/libgui_vendor.so
 vendor/lib/libmpbase.so
 vendor/lib/libsns_device_mode_stub.so
@@ -318,6 +327,7 @@ vendor/lib64/libvdis_interface.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 
 # Camera-arcsoft
+vendor/lib/libarcsoft_stereodistancemeasure.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib64/libarcsoft_super_night_raw.so
 
@@ -479,7 +489,7 @@ vendor/lib64/vendor.display.config@1.8.so
 vendor/lib64/vendor.display.config@1.9.so
 
 # Display-calibration
-vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3HA8_AMB577PX01_WQHD.xml
+vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3HA8_AMB638RD01_WQHD.xml
 
 # Dolby
 vendor/etc/dolby/dax-default.xml
@@ -1086,7 +1096,11 @@ vendor/etc/init/hw/init.samsung.bsp.rc
 vendor/etc/init/hw/init.samsung.display.rc
 vendor/etc/init/hw/init.samsung.rc
 vendor/lib/hw/com.samsung.chi.override.so
+vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libDLInterface.camera.samsung.so
+vendor/lib/libFacePreProcessing.camera.samsung.so
+vendor/lib/libHprFace_GAE_api.camera.samsung.so
+vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/lib_SamsungRec_06006.so
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
@@ -1097,7 +1111,11 @@ vendor/lib/lib_soundaliveresampler.so
 vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libxcv.camera.samsung.so
 vendor/lib/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib64/libBeauty_v4.camera.samsung.so
 vendor/lib64/libDLInterface.camera.samsung.so
+vendor/lib64/libFacePreProcessing.camera.samsung.so
+vendor/lib64/libHprFace_GAE_api.camera.samsung.so
+vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib64/libOpenCv.camera.samsung.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
@@ -1109,10 +1127,12 @@ vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/lsm6dsm_0.json
 vendor/etc/sensors/config/sdm845_ak991x_0.json
-vendor/etc/sensors/config/sdm845_ak991x_2.json
+vendor/etc/sensors/config/sdm845_ak991x_1.json
+vendor/etc/sensors/config/sdm845_ak991x_3.json
+vendor/etc/sensors/config/sdm845_ak991x_4.json
 vendor/etc/sensors/config/sdm845_lps22hb_0.json
 vendor/etc/sensors/config/sdm845_lsm6dsm_0.json
-vendor/etc/sensors/config/sdm845_lsm6dsm_2.json
+vendor/etc/sensors/config/sdm845_lsm6dsm_1.json
 vendor/etc/sensors/config/sdm845_power_0.json
 vendor/etc/sensors/config/sdm845_tmd4906_0.json
 vendor/etc/sensors/config/sns_amd.json
@@ -1201,12 +1221,8 @@ vendor/etc/wifi/bcmdhd_mfg.bin_b2
 vendor/etc/wifi/bcmdhd_mon.bin_b2
 vendor/etc/wifi/bcmdhd_sta.bin_b0
 vendor/etc/wifi/bcmdhd_sta.bin_b2
-vendor/etc/wifi/nvram.txt_murata_r020_b2
-vendor/etc/wifi/nvram.txt_murata_r021_b2
-vendor/etc/wifi/nvram.txt_murata_r022_b2
-vendor/etc/wifi/nvram.txt_murata_r031_b2
-vendor/etc/wifi/nvram.txt_murata_r033_b0
 vendor/etc/wifi/nvram.txt_murata_r041_b2
+
 # Misc
 vendor/app/mcRegistry/07010000000000000000000000000000.tlbin
 vendor/app/mcRegistry/ffffffffd00000000000000000000014.tlbin
@@ -1314,10 +1330,10 @@ vendor/etc/str/str_preference_data.dat
 vendor/etc/tms_audio_policy_configuration.xml
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
-vendor/lib/H12QS_libTsAe.so
-vendor/lib/H12QS_libTsAf.so
-vendor/lib/H12QS_libTsAwb.so
-vendor/lib/H12QS_libTsPdafm.so
+vendor/lib/J12QS_libTsAe.so
+vendor/lib/J12QS_libTsAf.so
+vendor/lib/J12QS_libTsAwb.so
+vendor/lib/J12QS_libTsPdafm.so
 vendor/lib/W08QS_libTsAeFront.so
 vendor/lib/W08QS_libTsAfFront.so
 vendor/lib/W08QS_libTsAwbFront.so
@@ -1327,14 +1343,19 @@ vendor/lib/com.qti.node.remosaic.so
 vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib/libFileMux_proprietary.so
 vendor/lib/libFrucSSMLib.so
+vendor/lib/libgaya.so
 vendor/lib/libHMT.so
 vendor/lib/libIDDQD_core.so
 vendor/lib/libIDDQD_interface.so
+vendor/lib/liblivefocus_capture_engine.so
+vendor/lib/liblivefocus_capture_interface.so
+vendor/lib/liblivefocus_preview_engine.so
+vendor/lib/liblivefocus_preview_interface.so
 vendor/lib/libMcClient.so
 vendor/lib/libOmxBlackBar.so
 vendor/lib/libTigerCaV4.so
 vendor/lib/libTigerLogger.so
-vendor/lib/lib_SoundBooster_ver900.so
+vendor/lib/lib_SoundBooster_ver950.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libapex_cmn.so
 vendor/lib/libapex_utils.so
@@ -1352,6 +1373,7 @@ vendor/lib/libcryptfshwhidl.so
 vendor/lib/libdeccfg.so
 vendor/lib/libdiagjni.so
 vendor/lib/libdisplayconfig.so
+vendor/lib/libdualcapture.so
 vendor/lib/libexthwplugin.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfloatingfeature.so
@@ -1389,9 +1411,11 @@ vendor/lib/libsaped.so
 vendor/lib/libsavsac.so
 vendor/lib/libsavscmn.so
 vendor/lib/libsavsvc.so
+vendor/lib/libsdynatm.so
 vendor/lib/libsec-ril-dsds.so
 vendor/lib/libsec-ril.so
 vendor/lib/libsec_semRil.so
+vendor/lib/libSEF.quram.so
 vendor/lib/libsecaudiocoreutils.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecnativefeature.so
@@ -1467,6 +1491,7 @@ vendor/lib/libsxqk.so
 vendor/lib/libsynaFpSensorTestNwd.so
 vendor/lib/libuniapi.so
 vendor/lib/libuniplugin.so
+vendor/lib/libvicom.so
 vendor/lib/libvideobeauty_interface.so
 vendor/lib/libvkmanager_vendor.so
 vendor/lib/libvndfwk_detect_jni.qti.so
@@ -1487,11 +1512,15 @@ vendor/lib64/libFacialStickerEngine.arcsoft.so
 vendor/lib64/libHMT.so
 vendor/lib64/libIDDQD_core.so
 vendor/lib64/libIDDQD_interface.so
+vendor/lib64/liblivefocus_capture_engine.so
+vendor/lib64/liblivefocus_capture_interface.so
+vendor/lib64/liblivefocus_preview_engine.so
+vendor/lib64/liblivefocus_preview_interface.so
 vendor/lib64/libMcClient.so
 vendor/lib64/libOmxBlackBar.so
 vendor/lib64/libTigerCaV4.so
 vendor/lib64/libTigerLogger.so
-vendor/lib64/lib_SoundBooster_ver900.so
+vendor/lib64/lib_SoundBooster_ver950.so
 vendor/lib64/libarac.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so

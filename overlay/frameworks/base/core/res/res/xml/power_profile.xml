@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <device name="Android">
     <item name="none">0</item>
-    <item name="ambient.on.display0">20</item>
-    <item name="screen.on.display0">76</item>
-    <item name="screen.full.display0">297.5</item>
+    <item name="ambient.on.display0">22.3</item>
+    <item name="screen.on.display0">77.3</item>
+    <item name="screen.full.display0">359.8</item>
     <item name="bluetooth.active">0</item>
     <item name="bluetooth.on">0</item>
     <item name="wifi.on">0</item>
     <item name="wifi.active">0</item>
     <item name="wifi.scan">0</item>
-    <item name="audio">34</item>
-    <item name="video">172</item>
-    <item name="camera.flashlight">85.5</item>
-    <item name="camera.avg">650</item>
-    <item name="gps.on">60.9</item>
-    <item name="radio.active">162</item>
-    <item name="radio.scanning">75</item>
+    <item name="audio">61</item>
+    <item name="video">211</item>
+    <item name="camera.flashlight">87.4</item>
+    <item name="camera.avg">735</item>
+    <item name="gps.on">60.8</item>
+    <item name="radio.active">189</item>
+    <item name="radio.scanning">87</item>
     <array name="radio.on">
-        <value>7.3</value>
-        <value>7.3</value>
+        <value>8.7</value>
+        <value>8.7</value>
     </array>
     <item name="modem.controller.idle">0</item>
     <item name="modem.controller.rx">0</item>
@@ -120,9 +120,9 @@
         <value>421.7</value>
         <value>478.9</value>
     </array>
-    <item name="cpu.suspend">5.14</item>
-    <item name="cpu.idle">12.8</item>
-    <item name="battery.capacity">3000</item>
+    <item name="cpu.suspend">7.15</item>
+    <item name="cpu.idle">14.6</item>
+    <item name="battery.capacity">4000</item>
     <item name="bluetooth.controller.idle">0</item>
     <item name="bluetooth.controller.rx">10</item>
     <item name="bluetooth.controller.tx">10</item>

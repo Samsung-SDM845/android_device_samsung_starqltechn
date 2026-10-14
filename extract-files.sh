@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=starqltechn
+DEVICE=crownqltechn
 VENDOR=samsung
 
 # Load extract_utils and do some sanity checks

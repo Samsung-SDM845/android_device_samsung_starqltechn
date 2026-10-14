@@ -65,8 +65,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.starqlte.rc",
-    src: "etc/init.starqlte.rc",
+    name: "init.crownqlte.rc",
+    src: "etc/init.crownqlte.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

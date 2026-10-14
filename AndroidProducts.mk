@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_starqltechn.mk
+    $(LOCAL_DIR)/lineage_crownqltechn.mk

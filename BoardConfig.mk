@@ -7,7 +7,7 @@
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-DEVICE_PATH := device/samsung/starqltechn
+DEVICE_PATH := device/samsung/crownqltechn
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -79,7 +79,7 @@ BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 KERNEL_SUPPORTS_LLVM_TOOLS := true
-TARGET_KERNEL_CONFIG := sdm845_defconfig starqlte_chn.config
+TARGET_KERNEL_CONFIG := sdm845_defconfig crownqlte_chn.config
 TARGET_KERNEL_SOURCE := kernel/samsung/sdm845
 
 # Manifest
@@ -98,15 +98,15 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := starqltechn
+TARGET_OTA_ASSERT_DEVICE := crownqltechn
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_CACHEIMAGE_PARTITION_SIZE := 336592896
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 72339456
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4650434560
-BOARD_VENDORIMAGE_PARTITION_SIZE := 788529152
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5019533312
+BOARD_VENDORIMAGE_PARTITION_SIZE := 861929472
 
 BOARD_ROOT_EXTRA_FOLDERS := efs
 
@@ -132,7 +132,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-05-01
+VENDOR_SECURITY_PATCH := 2022-06-01
 
 # SEPolicy 
 include device/qcom/sepolicy_vndr/SEPolicy.mk
@@ -152,4 +152,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/dhd/parameters/firmware_path"
 
-include vendor/samsung/starqltechn/BoardConfigVendor.mk
+include vendor/samsung/crownqltechn/BoardConfigVendor.mk

@@ -61,7 +61,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_qvr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qvr.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_skuk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_skuk.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml \
-    $(LOCAL_PATH)/configs/audio/mixer_paths_tavil_cornell.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil_cornell.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_mixer_paths_wcd9340.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths_wcd9340.xml \
     $(LOCAL_PATH)/configs/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
@@ -370,7 +369,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.usb.rc \
-    init.starqlte.rc \
+    init.crownqlte.rc \
     init.samsung.display.rc \
     init.samsung.rc \
     init.target.rc \
@@ -441,5 +440,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# Inherit from starqltechn vendor tree
-$(call inherit-product, vendor/samsung/starqltechn/starqltechn-vendor.mk)
+# Inherit from crownqltechn vendor tree
+$(call inherit-product, vendor/samsung/crownqltechn/crownqltechn-vendor.mk)

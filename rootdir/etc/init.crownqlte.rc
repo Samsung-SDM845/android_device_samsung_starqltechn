@@ -28,25 +28,12 @@
 #
 on boot
 # SSWAP
-    write /proc/sys/vm/swappiness 160
+    write /proc/sys/vm/swappiness 130
 
 #Samsung Members logging
     setprop persist.vendor.members.cp_sup on
 
 on fs
-# DQMDBG Partition
-    mkdir /dqmdbg 0770 system system
-    wait /dev/block/bootdevice/by-name/dqmdbg
-    mount ext4 /dev/block/bootdevice/by-name/dqmdbg /dqmdbg nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-
-    chown system system /dqmdbg
-    chmod 0770 /dqmdbg
-
-    mkdir /dqmdbg/backup 0770 system system
-
-# Create mb_po folder for Activation TA
-   mkdir /efs/mb_po 0700 system system
-
 # irisd
 service irisd /system/bin/irisd
     class late_start
@@ -61,7 +48,10 @@ service faced /system/bin/faced
 
 # Create carrier folder for HiddenMenu
 on post-fs
-     mkdir /efs/carrier 0755 system system
+    mkdir /efs/carrier 0755 system system
+
+# Create mb_po folder for Activation TA
+   mkdir /efs/mb_po 0700 system system
 
 # DP AUX switch control
     chmod 0660 /sys/class/dp_sec/dp_sbu_sw_sel
@@ -80,7 +70,7 @@ on post-fs
     chown system system /sys/class/dp_sec/dp_error_info
 
 # SSWAP
-service swapon /sbin/sswap -s -f 2560
+service swapon /sbin/sswap -s -f 2048
     class core
     user root
     group root
@@ -171,10 +161,6 @@ on post-fs-data
     chmod 0644 /dev/freezer/olaf/tasks
     chmod 0644 /dev/freezer/olaf/cgroup.procs
     chmod 0644 /dev/freezer/olaf/freezer.state
-
-# RTC Status
-    chown system system /efs/FactoryApp/rtc_status
-    chmod 0664 /efs/FactoryApp/rtc_status
 
 on property:sys.boot_completed=1
 # Permissions for audio
