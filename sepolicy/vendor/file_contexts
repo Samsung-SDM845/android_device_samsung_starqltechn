@@ -1,0 +1,17 @@
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.samsung                  u:object_r:hal_fingerprint_default_exec:s0
+
+# Camera
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service\.samsung                         u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.camera\.provider-service_32\.samsung                      u:object_r:hal_camera_default_exec:s0
+
+# Light (AIDL Samsung service)
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.samsung                                   u:object_r:hal_light_default_exec:s0
+
+# RIL sec-radio database
+/data/vendor/secradio(/.*)?                                                                               u:object_r:vendor_radio_data_file:s0
+
+# Samsung daemons
+/vendor/bin/argosd                                                                                         u:object_r:argosd_exec:s0
+/vendor/bin/hw/macloader                                                                                   u:object_r:macloader_exec:s0
+/vendor/bin/secril_config_svc                                                                              u:object_r:secril_config_svc_exec:s0

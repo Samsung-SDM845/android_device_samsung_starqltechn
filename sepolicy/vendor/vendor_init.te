@@ -1,0 +1,8 @@
+# Early-boot vendor setup
+allow vendor_init tmpfs:dir create_dir_perms;
+
+# Watchdog device node setup
+allow vendor_init watchdog_device:file { create write open setattr };
+
+# Cache search
+dontaudit vendor_init cache_file:dir search;
