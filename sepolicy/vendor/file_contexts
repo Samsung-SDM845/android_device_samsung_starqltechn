@@ -16,6 +16,9 @@
 /vendor/bin/hw/macloader                                                                                   u:object_r:macloader_exec:s0
 /vendor/bin/secril_config_svc                                                                              u:object_r:secril_config_svc_exec:s0
 
+# Samsung vibrator (AIDL service)
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.samsung                                     u:object_r:hal_vibrator_default_exec:s0
+
 # Fingerprint template storage
 /data/vendor/biometrics(/.*)?                                                                              u:object_r:vendor_biometrics_data_file:s0
 

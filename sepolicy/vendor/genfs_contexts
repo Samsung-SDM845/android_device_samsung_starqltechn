@@ -6,6 +6,8 @@ genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info     u:object_r:vend
 # Battery
 genfscon sysfs /devices/platform/soc/soc:battery/power_supply                                                                u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/type     u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-charger/power_supply/max77705-charger/type     u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/virtual/sensors                                                                                 u:object_r:vendor_sysfs_sensors:s0
 
 # Samsung sec LED
 genfscon sysfs /devices/virtual/sec/led/led_blink                                                                          u:object_r:sysfs_leds:s0
