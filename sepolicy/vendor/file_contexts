@@ -15,3 +15,12 @@
 /vendor/bin/argosd                                                                                         u:object_r:argosd_exec:s0
 /vendor/bin/hw/macloader                                                                                   u:object_r:macloader_exec:s0
 /vendor/bin/secril_config_svc                                                                              u:object_r:secril_config_svc_exec:s0
+
+# Fingerprint template storage
+/data/vendor/biometrics(/.*)?                                                                              u:object_r:vendor_biometrics_data_file:s0
+
+# Shared conn data (bt CID, wifi version)
+/data/vendor/conn(/.*)?                                                                                    u:object_r:vendor_convergence_data_file:s0
+
+# Samsung fingerprint sensor device
+/dev/esfp[0-9]+                                                                                             u:object_r:fp_sensor_device:s0

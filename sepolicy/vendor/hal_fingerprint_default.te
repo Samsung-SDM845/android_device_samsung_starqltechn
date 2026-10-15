@@ -1,0 +1,7 @@
+# Samsung fingerprint (template storage, TZ and uhid transport)
+allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
+allow hal_fingerprint_default fp_sensor_device:chr_file rw_file_perms;
+allow hal_fingerprint_default uhid_device:chr_file rw_file_perms;
+
+allow hal_fingerprint_default vendor_biometrics_data_file:dir create_dir_perms;
+allow hal_fingerprint_default vendor_biometrics_data_file:file create_file_perms;

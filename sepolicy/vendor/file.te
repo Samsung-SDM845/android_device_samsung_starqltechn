@@ -6,3 +6,16 @@ type vendor_sysfs_camera_writable, fs_type, sysfs_type;
 type vendor_sysfs_devicetree_soc, fs_type, sysfs_type;
 type vendor_sysfs_mmc_host, fs_type, sysfs_type;
 type vendor_sysfs_scsi_host, fs_type, sysfs_type;
+
+# Fingerprint template storage
+type vendor_biometrics_data_file, file_type, data_file_type;
+
+# Shared conn data (bt CID, wifi version)
+type vendor_convergence_data_file, file_type, data_file_type;
+
+# BCM wifi mac sysfs
+type vendor_sysfs_wifi, fs_type, sysfs_type;
+
+# kgsl/sensors sysfs
+type vendor_sysfs_kgsl, fs_type, sysfs_type;
+type vendor_sysfs_sensors, fs_type, sysfs_type;

@@ -1,0 +1,4 @@
+# Thermal daemon GPU/battery sysfs
+allow thermal-engine vendor_sysfs_kgsl:dir r_dir_perms;
+allow thermal-engine sysfs:dir r_dir_perms;
+allow thermal-engine sysfs_batteryinfo:dir search;

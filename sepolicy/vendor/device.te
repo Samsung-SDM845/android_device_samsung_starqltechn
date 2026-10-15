@@ -1,0 +1,2 @@
+# Samsung fingerprint sensor device
+type fp_sensor_device, dev_type;
