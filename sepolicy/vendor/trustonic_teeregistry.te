@@ -1,0 +1,5 @@
+# Trustonic TEE registry
+type trustonic_teeregistry, domain;
+type trustonic_teeregistry_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(trustonic_teeregistry)

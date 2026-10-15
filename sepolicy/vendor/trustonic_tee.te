@@ -1,0 +1,5 @@
+# Trustonic TEE proxy (minimal domain; runtime rules from denials)
+type trustonic_tee, domain;
+type trustonic_tee_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(trustonic_tee)

@@ -1,0 +1,2 @@
+# GPU kgsl state traversal
+allow surfaceflinger vendor_sysfs_kgsl:dir search;

@@ -1,0 +1,2 @@
+# GPU kgsl state traversal
+allow hal_graphics_allocator_default vendor_sysfs_kgsl:dir search;

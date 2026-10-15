@@ -5,3 +5,10 @@ type secril_config_svc_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(secril_config_svc)
 
 allow secril_config_svc mnt_vendor_file:file r_file_perms;
+
+# RIL radio props (Samsung base; type resolved like sm8250)
+set_prop(secril_config_svc, vendor_radio_prop)
+
+# Unmappable sets stay noisy-but-denied (Exy9810 base dontaudits them)
+dontaudit secril_config_svc default_prop:property_service set;
+dontaudit secril_config_svc radio_control_prop:property_service set;
