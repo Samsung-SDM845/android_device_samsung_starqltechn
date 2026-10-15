@@ -354,6 +354,9 @@ firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware-modem/image/
 /sys/devices/virtual/camera/flash rear_torch_flash 0664 system camera
 /sys/devices/virtual/camera/flash rear_flash       0664 system camera
 
+# SSRM camera info
+/sys/devices/virtual/camera/rear ssrm_camera_info 0660 system camera
+
 # LED class devices
 /sys/class/leds/red      delay_on     0640    system    system
 /sys/class/leds/red      delay_off    0640    system    system
