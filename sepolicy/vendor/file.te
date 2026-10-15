@@ -1,0 +1,8 @@
+# Camera
+type vendor_sysfs_camera, fs_type, sysfs_type;
+type vendor_sysfs_camera_writable, fs_type, sysfs_type;
+
+# sysfs SoC/storage nodes (argosd)
+type vendor_sysfs_devicetree_soc, fs_type, sysfs_type;
+type vendor_sysfs_mmc_host, fs_type, sysfs_type;
+type vendor_sysfs_scsi_host, fs_type, sysfs_type;
