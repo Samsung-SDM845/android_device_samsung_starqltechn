@@ -1,0 +1,4 @@
+# qseecomd reads Gatekeeper data (Samsung mdfpp TA)
+# NOTE: /data/misc/gatekeeper is core_data_file_type; Treble neverallows
+# forbid vendor access (typeattribute violator rejected by design).
+# Enforcing-time behavior TBD in v2/v3 (possible /data/vendor fallback).
