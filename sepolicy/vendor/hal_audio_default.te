@@ -1,0 +1,2 @@
+# Audio HAL sysfs class enumeration
+allow hal_audio_default sysfs:dir { open read };
