@@ -10,3 +10,7 @@ allow macloader mnt_vendor_file:file r_file_perms;
 allow macloader vendor_convergence_data_file:file r_file_perms;
 
 allow macloader vendor_sysfs_wifi:file rw_file_perms;
+
+allow macloader mnt_vendor_file:dir { write add_name };
+
+allow macloader vendor_sysfs_wifi:file rw_file_perms;

@@ -4,6 +4,7 @@ genfscon sysfs /devices/virtual/camera/flash/rear_flash          u:object_r:vend
 genfscon sysfs /devices/virtual/camera/rear/ssrm_camera_info     u:object_r:vendor_sysfs_camera_writable:s0
 
 # Battery
+genfscon sysfs /devices/platform/soc/soc:battery/power_supply                                                                u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/platform/soc/a98000.i2c/i2c-32/32-0066/max77705-fuelgauge/power_supply/max77705-fuelgauge/type     u:object_r:sysfs_batteryinfo:s0
 
 # Samsung sec LED
@@ -17,10 +18,12 @@ genfscon sysfs /devices/virtual/sensors/hrm_sensor/name                         
 genfscon sysfs /devices/virtual/sensors/hidden_hole/hh_ext_prox_th                                                         u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/virtual/input/input7                                                                                u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/virtual/sensors/ssc_core/ssc_hw_rev                                                                 u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/virtual/sensors/ssc_core                                                                              u:object_r:vendor_sysfs_sensors:s0
+genfscon sysfs /devices/virtual/input/input1                                                                                 u:object_r:vendor_sysfs_sensors:s0
 
 # Broadcom bluetooth sleep node
 genfscon proc /bluetooth/sleep/btwrite                            u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/lpm                                u:object_r:proc_bluetooth_writable:s0
 
 # BCM wifi mac sysfs
-genfscon sysfs /sys/wifi/mac_addr                                 u:object_r:vendor_sysfs_wifi:s0
+genfscon sysfs /wifi/mac_addr                                 u:object_r:vendor_sysfs_wifi:s0

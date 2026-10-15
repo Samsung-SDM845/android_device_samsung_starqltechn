@@ -1,2 +1,4 @@
 # SSC daemon sensor sysfs
 allow sensors vendor_sysfs_sensors:file r_file_perms;
+allow sensors vendor_sysfs_sensors:dir search;
+allow sensors vendor_sysfs_sensors:lnk_file read;

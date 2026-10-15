@@ -1,0 +1,4 @@
+# init extras (service sockets, efs mount, firmware)
+allow init socket_device:sock_file { create setattr };
+allow init efs_file:dir mounton;
+allow init firmware_file:file getattr;
